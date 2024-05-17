@@ -1,0 +1,2008 @@
+
+
+/*General*/
+
+    
+body {
+    margin: 0;
+}
+
+.custom-container,
+.custom-container-fluid {    
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto
+}
+    
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-fluid {
+    max-width: 100%;
+    height: auto
+}
+
+
+/*Announcement Bar*/
+
+.announcement-bar-sec{
+    background-color:#004E66;
+}
+.announcement-bar-sec .container{padding: 0px;}
+.announcement-bar-sec .inner-row{
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px 0;
+}
+.announcement-bar-sec .inner-row{
+    justify-content: space-between;
+}
+.announcement-bar-sec .inner-row a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.announcement-bar-sec .inner-row a:hover{
+    text-decoration: underline;
+}
+.announcement-bar-sec .inner-row .link-wrap svg{
+    display: inline-block;
+    vertical-align: middle;
+}
+.announcement-bar-sec .inner-row .right-content{text-align: right;}
+.announcement-bar-sec .inner-row .right-content a {
+    margin: 0 0 0 20px;
+}
+
+
+/*Header*/
+
+header .navbar-sec .container{padding:0px;} 
+header nav #navbarNav{justify-content: flex-end;}
+header nav #navbarNav a{
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 0;
+}
+header nav #navbarNav a:hover{
+    text-decoration: underline;
+}
+header nav #navbarNav li.nav-item {
+    margin-left: 20px;
+}
+header nav .navbar-nav .dropdown-menu {
+    z-index: 9999;
+    padding: 20px 25px;
+    background: #FFFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    min-width: 40rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: initial;
+}
+header nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+header nav .navbar-nav .dropdown-menu .main-heading{
+    color: #4D4D4A;
+    font-family: "DM Sans",sans-serif;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+header nav .navbar-nav .dropdown-menu .dropdown-item{
+    color: #AB9191;
+    font-size: 15px;
+    padding-left: 0px;
+    font-weight: 400 !important;
+    text-transform: initial !important;
+}
+header nav .navbar-nav .dropdown-menu .dropdown-item:hover{
+    color: #018AAA;
+    background: #fff;
+}
+header nav .navbar-nav .dropdown-menu .inner-col {
+    border-right: 1px solid #F2F2F2;
+}
+header nav .navbar-nav .dropdown-menu .inner-col:last-child {
+    border-right: initial;
+}
+header button.navbar-toggler{
+    padding: 0;
+    border: initial;
+    box-shadow: initial !important;
+}
+header .offcanvas-title{color: #fff;}
+header .offcanvas .nav-link{
+    font-family: "DM Sans",sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px 0px;
+}
+header .offcanvas .nav-link svg path{fill:#000;}
+header .offcanvas .btn-close{
+    --bs-btn-close-opacity:1;
+    width: 2em;
+    box-sizing: border-box;
+
+}
+header .offcanvas .submenu{
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/*Breadcrumbs*/
+
+.breadcrumb-wrap{
+    margin-top:20px;
+    font-family: "DM Sans",sans-serif;
+}
+.breadcrumb-wrap .breadcrumb-item a{
+    font-family: 'DM Sans',sans-serif;
+    color: rgba(0, 0, 0, 0.45);
+    text-decoration: none;
+}
+.breadcrumb-wrap .breadcrumb-item a:hover{text-decoration: underline;}
+.breadcrumb-wrap .breadcrumb-item.active{
+    color: rgba(0, 78, 102, 0.85);
+    font-weight: 500;
+}
+
+
+/*Home*/
+
+.home-banner-sec .inner-col{padding: 0px;}
+.home-banner-sec .content-wrap{
+    position: relative;
+}
+.home-banner-sec .content-wrap img{width: 100%;}
+.home-banner-sec .banner-overlay{
+    background: rgba(0, 78, 102, 0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+.home-banner-sec .content-wrap .text-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-family: 'DM Sans',sans-serif;
+}
+.home-banner-sec .content-wrap .text-wrap .main-heading{
+    letter-spacing: 0.3px;
+    font-size: 65px;
+}
+.home-banner-sec .content-wrap .text-wrap .main-desc{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+}
+.home-banner-sec .content-wrap .text-wrap .btn-wrap{margin-top:45px;}
+.home-banner-sec .content-wrap .text-wrap a{
+    border: 1px solid #FFFFFF;
+    border-radius: 103px;
+    padding: 13px 50px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all .3s ease;
+}
+.home-banner-sec .content-wrap .text-wrap a svg {
+    margin-left: 10px;
+    display: none;
+}
+.home-banner-sec .content-wrap .text-wrap a:hover svg {
+    display: block;
+    transform: translateX(8px);
+    transition: all .3s ease;
+}
+
+/*Home - Find Therapist*/
+
+.search-bar-sec{
+    background: #F5F5F5;
+}
+.search-bar-sec .content-wrap{
+    padding: 70px 0;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.search-bar-sec .content-wrap .main-heading{
+    color: #01303C;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.search-bar-sec .search-container{
+    max-width: 800px;
+    padding: 20px 15px;
+    max-height: 78px;
+    margin: auto;
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+.search-bar-sec .search-container .links-wrap{width: 65%;}
+.search-bar-sec .search-container .search-wrap{width: 50%;}
+.search-bar-sec .search-container .search-wrap .input-group{
+    align-items: center;
+}
+.search-bar-sec .search-container .search-wrap span{
+    background: #018AAA;
+    border-radius: 100px;
+    border-top-left-radius: 100px !important;
+    border-bottom-left-radius: 100px !important;
+    font-family: "DM Sans",sans-serif;
+    color: #fff;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 10px;
+    border:0.8px solid #018AAA;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 11;
+}
+.search-bar-sec .search-container .search-wrap span:hover{
+    background: transparent;
+    color: #018AAA;
+}
+.search-bar-sec .search-container .search-wrap span:hover svg path{
+    fill: #018AAA;
+}
+.search-bar-sec .search-container .search-wrap span svg{margin-right: 5px;}
+.search-bar-sec .search-container .search-wrap input{
+    border: initial;
+    box-shadow: initial;
+    padding-right: 0px;
+}
+.search-bar-sec .search-container .search-wrap input::placeholder{
+    color: #BFBFBF;
+    font-family: "DM Sans",sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.search-bar-sec .search-container .links-wrap a{
+    color: #4D4D4A;
+    font-size: 14px;
+    font-family: "DM Sans",sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1.6px solid #F5F5F5;
+}
+.search-bar-sec .search-container .links-wrap a:hover{
+    color: #018AAA;
+}
+.search-bar-sec .search-filters {
+    background: #FFFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    position: absolute;
+    width: 44em;
+}
+.search-bar-sec .search-filters .list-wrap label{
+    color: rgba(77, 77, 74, 0.85);
+    font-family: "DM Sans",sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 15px;
+}
+.search-bar-sec .search-filters .list-wrap label {
+    margin-bottom: 0.5rem;
+}
+.search-bar-sec .search-filters .list-wrap .form-check-input:checked {
+    background-color: #018AAA;
+    border-color: #018AAA;
+}
+.search-bar-sec .search-filters .list-wrap .form-check-input:focus {
+    border-color: #018AAA;
+    outline: 0;
+    box-shadow: initial;
+}
+
+
+
+/*Home - Empower */
+
+.empower-sec .tooltip {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    text-align: left;
+}
+.empower-sec .tooltip.show {
+  opacity: 1;
+}
+.empower-sec .tooltip-inner {
+    box-shadow: 0px 32.1371px 37.8083px rgba(185, 185, 185, 0.6);
+    background-color: #FFFFFF;
+    color: #004E66;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+.empower-sec .links-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.empower-sec .links-wrap a{
+    color: #004E66;
+    font-family: 'DM Sans',sans-serif;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+}
+.empower-sec .inner-row{
+    padding-top:70px;
+    padding-bottom: 70px;
+}
+.empower-sec .inner-col-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.empower-sec .inner-col-two{text-align: center;}
+.empower-sec .content-wrap .sub-heading{
+    color: #FBAD18;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.empower-sec .content-wrap .main-heading{
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+}
+.empower-sec .content-wrap .main-desc{
+    font-family: 'DM Sans',sans-serif;
+    color: #4D4D4D;
+    text-align: justify;
+    font-size: 16px;
+    max-width: 445px;
+}
+.empower-sec  .content-wrap .btn-wrap{
+    margin-top: 20px;
+}
+.empower-sec .content-wrap .btn-wrap a{
+    font-family: "DM Sans",sans-serif;
+    color: #004E66;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    padding: 12px 20px;
+    display: inline-flex;
+}
+.empower-sec .content-wrap .btn-wrap a:hover{
+    background: #FBAD18;
+    color: #fff;
+}
+
+
+
+/*Home - Therapy Services*/
+
+
+.therapy-services-sec{
+    background-color: #F5F5F5;
+    padding-top:70px;
+    padding-bottom: 70px;
+}
+.therapy-services-sec .boxes-row{
+    max-width: 980px;
+    margin: auto;
+}
+.therapy-services-sec .main-heading{
+    color: #004E66;
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.therapy-services-sec .card{
+    text-align: center;
+    box-shadow: 0px 32.1371px 37.8083px rgba(185, 185, 185, 0.1);
+    border-radius: 8px;
+    border: initial;
+    font-family: "DM Sans",sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+}
+.therapy-services-sec .card img{margin: auto;}
+.therapy-services-sec .card .card-title {
+    color: #004E66;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.therapy-services-sec .card .card-body .card-text{
+    color: #4D4D4D;
+    max-width: 215px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    height: 80px;
+}
+.therapy-services-sec .card .card-body a{
+    background: #FFFFFF;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    color: #004E66;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 20px;
+}
+.therapy-services-sec .card .card-body a:hover{
+    background-color: #FBAD18;
+    color: #fff;
+}
+
+
+/*Home - Accordion */
+
+.accordion-sec{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.accordion-sec .inner-col-two{
+    display: flex;
+    align-items: center;
+}
+.accordion-sec .img-wrap{text-align: center;}
+.accordion-sec .content-wrap .sub-heading{
+    color: #FBAD18;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.accordion-sec .content-wrap .main-heading {
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+.accordion-sec .content-wrap .main-desc {
+    font-family: 'DM Sans',sans-serif;
+    color: #4D4D4D;
+    font-size: 16px;
+    max-width: 475px;
+}
+.accordion-sec .content-wrap .btn-wrap {
+    margin-top: 20px;
+}
+.accordion-sec .content-wrap .btn-wrap a {
+    font-family: "DM Sans",sans-serif;
+    color: #004E66;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    padding: 12px 20px;
+    display: inline-flex;
+}
+.accordion-sec .content-wrap .btn-wrap a:hover{
+    background-color: #FBAD18;
+    color: #fff;
+}
+.accordion-sec .accordion{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.accordion-sec .accordion-item{
+    border-bottom: initial;
+    border-top: 0.7px solid #F5F5F5;
+}
+.accordion-sec .accordion-flush .accordion-item:first-child{
+    border-top: 0.7px solid #F5F5F5;
+}
+.accordion-sec .accordion-flush .accordion-item:last-child{
+    border-bottom: 0.7px solid #F5F5F5;
+}
+.accordion-sec .accordion-button{
+    font-size: 18px;
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 700;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    box-shadow: initial;
+    color: #018AAA;
+    letter-spacing: 0.3px;
+}
+.accordion-sec .accordion-button.collapsed{
+    color: #004E66;
+}
+.accordion-sec .accordion-button.collapsed::after{
+    background-image: url("../../assets/images/accordion-plus.svg");
+    background-size: 1rem;
+}
+.accordion-sec .accordion-button:not(.collapsed)::after{
+    background-image: url("../../assets/images/accordion-minus.svg");
+    background-size: 1rem;
+}
+.accordion-sec .accordion-body{
+    font-family: "Inter",sans-serif;
+    color: #4D4D4D;
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 470px;
+
+}
+
+
+/*Home - Reasons*/
+
+.reasons-sec{
+    background: #f5f5f5;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.reasons-sec .inner-main-wrap{
+    max-width: 975px;
+    margin: auto;
+}
+.reasons-sec .headings-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.reasons-sec .headings-header .sub-heading {
+    color: #FBAD18;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.reasons-sec .headings-header .main-heading {
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+.reasons-sec .reason-boxes .single-box{margin-bottom: 23px;}
+.reasons-sec .reason-boxes .single-box .box-inner-wrap{
+    background: #FFFFFF;
+    box-shadow: 0px 32.1371px 37.8083px rgba(185, 185, 185, 0.1);
+    border-radius: 8px;
+    padding: 32px 20px;
+}
+.reasons-sec .reason-boxes .single-box .main-heading{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    margin: 16px 0 8px;
+    font-size: 20px;
+}
+.reasons-sec .reason-boxes .single-box .main-desc{
+    font-family: "Inter",sans-serif;
+    font-size: 15px;
+    color: #4D4D4D;
+}
+
+
+/*Home - Contact Form*/
+
+.contact-us-sec{
+    padding-top:70px;
+    padding-bottom: 70px;
+    max-width: 1200px;
+    margin: auto;
+}
+.contact-us-sec .headings-wrap .sub-heading {
+    color: #FBAD18;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.contact-us-sec .headings-wrap .main-heading {
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+
+.contact-us-sec .form-wrap form input{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    font-family: "DM Sans",sans-serif;
+}
+.contact-us-sec .form-wrap form input:focus,
+.contact-us-sec .form-wrap form textarea:focus
+{
+    box-shadow: initial;
+    border: 1px solid #FBAD18;
+}
+.contact-us-sec .form-wrap form label{
+    font-family: "DM Sans",sans-serif;
+    color: #BFBFBF;
+}
+.contact-us-sec .form-wrap button{
+    background: #FFFFFF;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    color: #004E66;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 35px;
+}
+.contact-us-sec .form-wrap button:hover,
+.contact-us-sec .form-wrap button:active {
+    background-color: #FBAD18;
+    color: #fff;
+    border-color:#FBAD18;
+}
+.contact-us-sec .form-wrap form .btn-wrap{text-align: right;}
+
+
+
+/*Home - Certificates*/
+
+.certificates-sec{
+    background: #f5f5f5;
+    padding-top:70px;
+    padding-bottom: 70px;
+
+}
+.certificates-sec .main-heading{
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.certificates-sec .logos-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.certificates-sec .logos-wrap .single-logo {
+    margin: 0 30px;
+}
+
+
+/*Contact - Main Form*/
+
+
+.contact-main-form-sec{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.contact-main-form-sec .form-header{
+    text-align: center;
+    font-family: "DM Sans",sans-serif;
+}
+.contact-main-form-sec .form-header .main-heading{
+    font-size: 32px;
+    color: #004E66;
+    font-weight: 700;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.contact-main-form-sec .form-header .main-desc{
+    color: #004E66;
+    max-width: 750px;
+    margin: auto;
+}
+.contact-main-form-sec .form-wrap{
+    max-width: 845px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contact-main-form-sec .form-wrap form input{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    font-family: "DM Sans",sans-serif;
+}
+.contact-main-form-sec .form-wrap form input:focus,
+.contact-main-form-sec .form-wrap form textarea:focus
+{
+    box-shadow: initial;
+    border: 1px solid #FBAD18;
+}
+.contact-main-form-sec .form-wrap form label{
+    font-family: "DM Sans",sans-serif;
+    color: #BFBFBF;
+}
+.contact-main-form-sec .form-wrap button{
+    background: #FFFFFF;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    color: #004E66;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 35px;
+}
+.contact-main-form-sec .form-wrap button:hover,
+.contact-main-form-sec .form-wrap button:active {
+    background-color: #FBAD18;
+    color: #fff;
+    border-color:#FBAD18;
+}
+.contact-main-form-sec .form-wrap form .btn-wrap{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/*Aboutus */
+
+.about-us-sec {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.about-us-sec .inner-col-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us-sec .content-wrap .main-heading {
+    font-size: 42px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+}
+.about-us-sec .content-wrap .main-desc {
+    font-family: 'DM Sans',sans-serif;
+    color: #4D4D4D;
+    font-size: 16px;
+    max-width: 445px;
+}
+
+/*Aboutus - Philosophy*/
+
+
+.philosophy-sec{
+    background-color: #F5F5F5;
+    padding-top:70px;
+    padding-bottom: 70px;
+}
+.philosophy-sec .boxes-row{
+    max-width: 980px;
+    margin: auto;
+}
+.philosophy-sec .main-heading{
+    color: #004E66;
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.philosophy-sec .card{
+    text-align: center;
+    box-shadow: 0px 32.1371px 37.8083px rgba(185, 185, 185, 0.1);
+    border-radius: 8px;
+    border: initial;
+    font-family: "DM Sans",sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+}
+.philosophy-sec .card img{margin: auto;}
+.philosophy-sec .card .card-title {
+    color: #004E66;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.philosophy-sec .card .card-body .card-text{
+    color: #4D4D4D;
+    max-width: 215px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    height: 80px;
+}
+.philosophy-sec .card .card-body a{
+    background: #FFFFFF;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    color: #004E66;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 20px;
+}
+.philosophy-sec .card .card-body a:hover{
+    background-color: #FBAD18;
+    color: #fff;
+}
+
+
+/*Aboutus - Team*/
+
+.team-sec{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.team-sec .main-heading {
+    color: #004E66;
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.team-sec .member-wrap {
+    max-width: 517px;
+    margin:auto;
+}
+.team-sec .member-wrap img{margin-bottom: 30px;}
+.team-sec .member-wrap .member-name{
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+}
+.team-sec .member-wrap .member-designation{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 18px;
+}
+.team-sec .member-wrap .member-desc{
+    color: #4D4D4A;
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.team-sec .member-wrap .member-desc span{font-weight: 700}
+.team-sec .member-wrap .btn-wrap {
+    margin-top: 20px;
+}
+.team-sec .member-wrap .btn-wrap a{
+    font-family: "DM Sans",sans-serif;
+    color: #01303C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    padding: 12px 36px;
+    display: inline-flex;
+}
+.team-sec .member-wrap .btn-wrap a:hover{
+    background: #FBAD18;
+    color: #fff;
+}
+
+
+/*Profile - Detail*/
+
+.profile-detail-sec{margin-bottom: 35px;}
+.profile-detail-sec .sec-inner-wrap{
+    max-width: 1150px;
+    margin: auto;
+}
+.profile-detail-sec .img-wrap{
+    max-width: 512px;
+}
+.profile-detail-sec .img-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 512px;
+}
+.profile-detail-sec .img-detail .img-label{
+    font-family: 'DM Sans',sans-serif;
+    color: #018AAA;
+    font-weight: 700;
+    margin: 0;
+}
+
+.profile-detail-sec .img-detail .img-label span{
+    font-weight: 400;
+}
+.profile-detail-sec .detail-wrap .member-name {
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+}
+.profile-detail-sec .detail-wrap .member-designation {
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 18px;
+}
+.profile-detail-sec .detail-wrap .member-desc {
+    color: #4D4D4A;
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.profile-detail-sec .detail-wrap .btn-wrap {
+    margin-top: 20px;
+}
+.profile-detail-sec .detail-wrap .btn-wrap a {
+    font-family: "DM Sans",sans-serif;
+    color: #01303C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    padding: 11px 22px;
+    display: inline-flex;
+}
+.profile-detail-sec .detail-wrap .btn-wrap a:hover {
+    background: #FBAD18;
+    color: #fff;
+}
+
+
+/*Profile - Certifications*/
+
+.profile-certifications-sec {
+    background: #F5F5F5;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.profile-certifications-sec .sec-inner-wrap{
+    max-width: 1150px;
+    margin: auto;
+}
+.profile-certifications-sec .sidebar-content-wrap .sidebar-main-heading {
+    color: #004E66;
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.profile-certifications-sec .sidebar-content-wrap .adhd-list{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.profile-certifications-sec .sidebar-content-wrap .inner-wrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-certifications-sec .sidebar-content-wrap .inner-wrap:last-child{margin-bottom: 0px;}
+.profile-certifications-sec .sidebar-content-wrap .inner-wrap img{margin-right: 10px;}
+.profile-certifications-sec .sidebar-content-wrap .inner-wrap .main-heading{
+    color: #4D4D4A;
+    font-size: 14px;
+    font-family: "DM Sans",sans-serif;
+    margin: 0;
+    font-weight: 600;
+}
+.profile-certifications-sec .sidebar-content-wrap .inner-wrap .sub-heading{
+    color: #4D4D4A;
+    font-size: 14px;
+    font-family: "DM Sans",sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+.profile-certifications-sec .sidebar-content-wrap .btn-wrap a {
+    font-family: "DM Sans",sans-serif;
+    background: #fff;
+    color: #004E66;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    padding: 11px 20px;
+    display: inline-flex;
+}
+.profile-certifications-sec .sidebar-content-wrap .btn-wrap a:hover{
+    background: #FBAD18;
+    color: #fff;
+} 
+.profile-certifications-sec .cert-boxes-wrap{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.profile-certifications-sec .cert-boxes-wrap .single-box {
+    margin: 0px 5.7px 15px;
+}
+.profile-certifications-sec .cert-boxes-wrap .single-box .inner-wrap {
+    background: #FFFFFF;
+    box-shadow: 0px 32.1371px 37.8083px rgba(185, 185, 185, 0.1);
+    border-radius: 8px;
+    width: 268px;
+    text-align: center;
+    padding: 50px 20px 50px;
+    height: 100%;
+}
+.profile-certifications-sec .cert-boxes-wrap .single-box .inner-wrap img{
+    height: 60px;
+    object-fit: none;
+    margin: auto;
+}
+.profile-certifications-sec .cert-boxes-wrap .single-box .main-heading{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 30px 0;
+}
+.profile-certifications-sec .cert-boxes-wrap .single-box .box-ul{
+    font-family: "Inter",sans-serif;
+    list-style: none;
+    padding: 0;
+    color: #4D4D4A;
+    font-size: 16px;
+}
+
+.profile-certifications-sec .cert-boxes-wrap ul.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    width: 100%;
+}
+.profile-certifications-sec .cert-boxes-wrap .slick-dots li {
+    margin: 0 0.25rem;
+}
+.profile-certifications-sec .cert-boxes-wrap .slick-dots li.slick-active button {
+    background: #004E66;
+}
+.profile-certifications-sec .cert-boxes-wrap .slick-dots button {
+    display: block;
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+    text-indent: -9999px;
+}
+
+
+/*Individual Therapy - Strength*/
+
+.it-strength-sec .desktop-img{display: block;}
+.it-strength-sec .mobile-img{display: none;}
+.it-strength-sec .container-fluid{
+    padding: 0px;
+}
+.it-strength-sec .content-wrap{position: relative;}
+.it-strength-sec .content-wrap img{width: 100%;}
+.it-strength-sec .content-wrap .img-overlay {
+    background: rgba(1, 48, 60, 0.75);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.it-strength-sec .content-wrap .inner-text-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.it-strength-sec .content-wrap .inner-text-wrap .main-heading{
+    color: #fff;
+    font-family: "DM Sans",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.it-strength-sec .content-wrap .inner-text-wrap .main-desc{
+    color: #fff;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+}
+.it-strength-sec .content-wrap .inner-text-wrap .btn-wrap{margin-top: 20px;}
+.it-strength-sec .content-wrap .inner-text-wrap .btn-wrap a{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 20px;
+    display: inline-flex;
+    text-decoration: none;
+    font-family: "DM Sans",sans-serif;
+}
+.it-strength-sec .content-wrap .inner-text-wrap .btn-wrap a:hover{
+    background: #fff;
+    color: #004E66;
+}
+
+/*Individual Therapy - Hero*/
+
+.it-hero-sec .desktop-img{display: block;}
+.it-hero-sec .mobile-img{display: none;}
+.it-hero-sec .content-wrap img{width: 100%;}
+.it-hero-sec  .main-heading{
+    font-family: "DM Sans",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #004E66;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.it-hero-sec .content-wrap{position: relative;}
+.it-hero-sec .content-wrap .img-overlay {
+    background: rgba(1, 48, 60, 0.75);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.it-hero-sec .content-wrap  .inner-row-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 50px;
+}
+.it-hero-sec .left-content .main-heading{
+    color: #fff;
+    font-family: "DM Sans",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-align: left;
+    max-width: 450px;
+    line-height: 50px;
+}
+.it-hero-sec .right-content{
+    text-align: left;
+    max-width: 388px;
+    margin-left: auto;
+}
+.it-hero-sec .right-content .desc-wrap{
+    color: #fff;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+}
+.it-hero-sec .inner-row-wrap .right-content .btn-wrap{margin-top: 20px;}
+.it-hero-sec .inner-row-wrap .right-content .btn-wrap a{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 20px;
+    display: inline-flex;
+    text-decoration: none;
+    font-family: "DM Sans",sans-serif;
+}
+.it-hero-sec .inner-row-wrap .right-content .btn-wrap a:hover{
+    background: #fff;
+    color: #004E66;
+}
+
+/*Individual Therapy - Therapeutic*/
+
+.therapeutic-sec{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 1150px;
+    margin: auto;
+}
+.therapeutic-sec .main-sec-heading{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 30px;
+}
+.therapeutic-sec .desktop-tabs-wrap{display: block;}
+.therapeutic-sec .mobile-accordion-wrap{display: none;}
+.therapeutic-sec .desktop-tabs-wrap .tab {
+    float: left;
+    border-right: 2px solid #F5F5F5;
+    width: 20%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.therapeutic-sec .desktop-tabs-wrap .tab button {
+    display: block;
+    background-color: inherit;
+    color: #018AAA;
+    padding: 2px 16px 2px 6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    border-left: 4px solid #fff;
+}
+.therapeutic-sec .desktop-tabs-wrap .tab button.active {
+    color:#01303C;
+    border-left: 4px solid #01303C;
+}
+.therapeutic-sec .desktop-tabs-wrap .tabcontent {
+    float: left;
+    padding: 0px 0px 0px 15px;
+    width: 80%;
+    border-left: none;
+    height: 300px;
+}
+.therapeutic-sec .desktop-tabs-wrap .tabcontent .inner-wrap{
+    background: #f5f5f5;
+    padding: 10px;
+}
+.therapeutic-sec .desktop-tabs-wrap .tabcontent .inner-wrap .content-wrap{
+    background: #fff;
+    padding: 0 30px;
+    border-top: 5px solid #018AAA;
+    height: 299px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.therapeutic-sec .desktop-tabs-wrap .tabcontent .main-heading{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+.therapeutic-sec .desktop-tabs-wrap .tabcontent .main-desc{
+    color: #4D4D4A;
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+}
+.therapeutic-sec .mobile-accordion-wrap .accordion-item{    
+    border-radius: initial;
+    border: initial;
+}
+.therapeutic-sec .mobile-accordion-wrap .accordion-item .accordion-button{
+    background: transparent;
+    box-shadow: initial;
+    color: #01303C;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+.therapeutic-sec .mobile-accordion-wrap .accordion-item .accordion-button.collapsed{
+    color:#B8B8B8;
+}
+.therapeutic-sec .mobile-accordion-wrap .accordion-button:not(.collapsed)::after {
+    background-image: url("../../assets/images/open-arrow.svg");
+    transform: rotate(0deg);
+}
+.therapeutic-sec .mobile-accordion-wrap .accordion-button.collapsed::after {
+    background-image: url("../../assets/images/closed-arrow.svg");
+    background-size: contain;
+    transform: rotate(0deg);
+}
+.therapeutic-sec .mobile-accordion-wrap .accordion-collapse{background: #f5f5f5;}
+.therapeutic-sec .mobile-accordion-wrap .content-wrap{
+    background: #fff;
+    padding: 25px 30px;
+    border-top: 5px solid #018AAA;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.therapeutic-sec .mobile-accordion-wrap .content-wrap .main-heading{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+.therapeutic-sec .mobile-accordion-wrap .content-wrap .main-desc{
+    color: #4D4D4A;
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+
+/*Individual Therapy - Presenting Issues*/
+
+.presenting-issues-sec{
+    padding: 70px 0;
+    background:#f5f5f5;
+}
+.presenting-issues-sec .inner-wrap{
+    max-width: 1150px;
+    margin: auto;
+}
+.presenting-issues-sec .main-heading{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 30px;
+}
+.presenting-issues-sec .issues-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.presenting-issues-sec .issues-wrap .single-box{
+    background: #FFFFFF;
+    border-radius: 6px;
+    width: 302px;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.presenting-issues-sec .issues-wrap .single-box.active {
+    background: #004E66;
+}
+.presenting-issues-sec .issues-wrap .single-box.active .box-heading{color:#fff;}
+.presenting-issues-sec .issues-wrap .single-box .issue-icon{display: block;}
+.presenting-issues-sec .issues-wrap .single-box .issue-icon-active{display: none;}
+.presenting-issues-sec .issues-wrap .single-box.active .issue-icon{display: none;}
+.presenting-issues-sec .issues-wrap .single-box.active .issue-icon-active{display: block;}
+.presenting-issues-sec .issues-wrap .single-box img{margin-right: 20px;}
+.presenting-issues-sec .single-box .heading-wrap .box-heading{
+    font-size: 18px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+.presenting-issues-sec .issues-wrap .single-box .tooltiptext{
+    visibility: hidden;
+    width: 100%;
+    background-color: #fff;
+    color: #004E66;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 0;
+    right: 0;
+    font-family: "Inter",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    filter: drop-shadow(0px 32.1371px 37.8083px rgba(185, 185, 185, 0.1));
+}
+.presenting-issues-sec .issues-wrap .single-box.active .tooltiptext{visibility: visible;}
+.presenting-issues-sec .issues-wrap .single-box .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+
+/*ADHD - Hero*/
+
+
+.adhd-hero-sec .desktop-img{display: block;}
+.adhd-hero-sec .mobile-img{display: none;}
+.adhd-hero-sec .content-wrap img{width: 100%;}
+.adhd-hero-sec  .main-heading{
+    font-family: "DM Sans",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #004E66;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.adhd-hero-sec .content-wrap{position: relative;}
+.adhd-hero-sec .content-wrap .img-overlay {
+    background: rgba(1, 48, 60, 0.75);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.adhd-hero-sec .content-wrap  .inner-row-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 50px;
+}
+.adhd-hero-sec .left-content .main-heading{
+    color: #fff;
+    font-family: "DM Sans",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-align: left;
+    max-width: 450px;
+    line-height: 50px;
+}
+.adhd-hero-sec .right-content{
+    text-align: left;
+    max-width: 388px;
+    margin-left: auto;
+}
+.adhd-hero-sec .right-content .desc-wrap{
+    color: #fff;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+}
+.adhd-hero-sec .inner-row-wrap .right-content .btn-wrap{margin-top: 20px;}
+.adhd-hero-sec .inner-row-wrap .right-content .btn-wrap a{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 20px;
+    display: inline-flex;
+    text-decoration: none;
+    font-family: "DM Sans",sans-serif;
+}
+.adhd-hero-sec .inner-row-wrap .right-content .btn-wrap a:hover{
+    background: #fff;
+    color: #004E66;
+}
+
+
+/*ADHD - Help*/
+
+
+.adhd-help-sec{
+    padding:70px 0;
+}
+.adhd-help-sec .inner-wrap{
+    max-width: 1150px;
+    margin: auto;
+}
+.adhd-help-sec .main-sec-heading {
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.adhd-help-sec .img-with-text-wrap{
+    display: flex;
+    align-items: center;
+}
+.adhd-help-sec .img-with-text-wrap.left-text{flex-direction: row-reverse;}
+.adhd-help-sec .img-with-text-wrap .content-wrap{
+    max-width: 450px;
+    width: 50%;
+}
+.adhd-help-sec .img-with-text-wrap .content-wrap img{display: none;}
+.adhd-help-sec .img-with-text-wrap.right-text .content-wrap{
+    margin-left: auto;
+}
+.adhd-help-sec .img-with-text-wrap.left-text .content-wrap{
+    margin-right: auto;
+}
+.adhd-help-sec .img-with-text-wrap .sub-heading {
+    color: #FBAD18;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.adhd-help-sec .img-with-text-wrap .main-heading {
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.adhd-help-sec .img-with-text-wrap .main-desc {
+    font-family: 'DM Sans',sans-serif;
+    color: #4D4D4D;
+    text-align: justify;
+    font-size: 14px;
+    max-width: 445px;
+}
+.adhd-help-sec .img-with-text-wrap .img-wrap{
+    width: 50%;
+}
+
+
+/*Terms & Conditions*/
+
+
+.terms-conditions-sec{
+    background: #f5f5f5;
+    padding: 40px 0 60px;
+}
+.terms-conditions-sec .inner-wrap{
+    max-width: 1150px;
+    margin: auto;
+}
+.terms-conditions-sec .main-sec-heading{
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.terms-conditions-sec .content-wrap{
+    background: #fff;
+    padding: 20px 20px;
+    font-family: "DM Sans",sans-serif;
+    color: #4D4D4A;
+}
+.terms-conditions-sec .content-wrap h1{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 2px;
+}
+.terms-conditions-sec .content-wrap p{font-size: 15px;}
+.terms-conditions-sec .content-wrap .link-wrap p{margin-bottom: 0px;}
+.terms-conditions-sec .content-wrap .link-wrap a{font-weight: 700;color: #4D4D4A;text-decoration: none;}
+.terms-conditions-sec .content-wrap .link-wrap a:hover{text-decoration: underline;}
+
+
+/*Privacy Policy */
+
+.privacy-policy-sec{
+    background: #f5f5f5;
+    padding: 40px 0 60px;
+}
+.privacy-policy-sec .inner-wrap{
+    max-width: 1150px;
+    margin: auto;
+}
+.privacy-policy-sec .main-sec-heading{
+    font-size: 32px;
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.privacy-policy-sec .content-wrap{
+    background: #fff;
+    padding: 20px 20px;
+    font-family: "DM Sans",sans-serif;
+    color: #4D4D4A;
+}
+.privacy-policy-sec .content-wrap h1{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 2px;
+}
+.privacy-policy-sec .content-wrap p{font-size: 15px;}
+.privacy-policy-sec .content-wrap ul{list-style: auto;}
+.privacy-policy-sec .content-wrap .link-wrap p{margin-bottom: 0px;}
+.privacy-policy-sec .content-wrap .link-wrap a{font-weight: 700;color: #4D4D4A;text-decoration: none;}
+.privacy-policy-sec .content-wrap .link-wrap a:hover{text-decoration: underline;}
+
+
+
+/*Therapist Result - List*/
+
+.therapists-list-sec{
+    padding: 70px 0;
+    background: #f5f5f5;
+}
+.therapists-list-sec .inner-wrap{
+    max-width: 1150px;
+    margin: auto;
+}
+.therapists-list-sec .therapists-row{position: relative;}
+.therapists-list-sec .therapists-row .main-sec-heading{
+    color: #004E66;
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 30px 0 20px;
+}
+.therapists-list-sec .filters-wrap{
+    display: flex;
+    align-items: center;
+}
+.therapists-list-sec .filters-wrap .single {
+    font-family: 'DM Sans',sans-serif;
+    color: #018AAA;
+    display: flex;
+    align-items: center;
+    border: 1px solid #018AAA;
+    border-radius: 100px;
+    padding: 6px 4px 6px 12px;
+    margin-right: 10px;
+}
+.therapists-list-sec .filters-wrap .single .filter-name{
+    font-size: 12px;
+    margin: 0px;
+    margin-right: 10px;
+}
+.therapists-list-sec .therapists-list .slick-slide {
+  margin: 0 22px;
+}
+.therapists-list-sec .therapists-list .slick-list {
+  margin: 0 -22px;
+}
+.therapists-list-sec .therapists-list .slick-slide img {
+    display: block;
+    border-radius: initial;
+}
+.therapists-list-sec .therapists-list .single-therapist .card{
+    border: 1px solid #F5F5F5;
+    border-radius: initial;
+    margin-bottom: 40px;
+}
+.therapists-list-sec .therapists-list .single-therapist .card .card-title{
+    color: #004E66;
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.therapists-list-sec .therapists-list .single-therapist .card .card-text{
+    color: rgba(0, 0, 0, 0.45);
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+}
+.therapists-list-sec .therapists-list .single-therapist .card .links-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.therapists-list-sec .therapists-list .single-therapist .card .links-wrap .learn-more{
+    font-family: 'DM Sans',sans-serif;
+    color: #004E66;
+    font-size: 12px;
+    font-weight: 500;
+}
+.therapists-list-sec .therapists-list .single-therapist .card .links-wrap .btn{
+    font-family: "Inter",sans-serif;
+    background: #FFFFFF;
+    border: 1px solid #FBAD18;
+    border-radius: 100px;
+    color: #004E66;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 20px;
+}
+.therapists-list-sec .therapists-list .single-therapist .card .links-wrap .btn:hover {
+    background-color: #FBAD18;
+    color: #fff;
+}
+.therapists-list-sec .therapists-list-arrows-wrap{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 28px;
+    right: 14px;
+}
+.therapists-list-sec .therapists-list-arrows-wrap .main-heading{
+    color: #004E66;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    margin-right: 15px;
+}
+.therapists-list-sec .therapists-list-arrows-wrap .slider-arrows{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.therapists-list-sec .therapists-list-arrows-wrap .slider-arrows li{
+    background: #fff;
+    padding: 0;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.therapists-list-sec .therapists-list-arrows-wrap .slider-arrows li.prev-arrow{
+    margin-right: 15px;
+}
+
+/*Footer */
+
+footer .top-footer .inner-wrap{
+    max-width: 1100px;
+    margin: auto;
+}
+footer .top-footer{
+    background: #01303C;
+    color:#fff;
+    padding-top:70px;
+    padding-bottom:70px;
+}
+
+footer .top-footer .footer-logo-wrap img{margin-bottom: 15px;}
+footer .top-footer .footer-logo-wrap .logo-desc{
+    font-family: "DM Sans",sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    max-width: 297px;
+}
+footer .top-footer .social-links{margin-top: 20px;}
+footer .top-footer .social-links svg {
+    margin-right: 6px;
+}
+footer .top-footer .social-links a{text-decoration: none;}
+footer .top-footer .social-links a:hover svg path{fill:#FBAD18}
+footer .top-footer .list-heading{
+    font-family: "DM Sans",sans-serif;
+    color: #FBAD18;
+    font-weight: 700;
+    font-size: 18px;
+}
+footer .top-footer .menu-ul{
+    list-style: none;
+    padding: 0;
+    font-family: "DM Sans",sans-serif;
+}
+footer .top-footer .menu-ul li {
+    margin-bottom: 7px;
+}
+footer .top-footer .menu-ul a{
+    letter-spacing: 0.3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+footer .top-footer .menu-ul a:hover{text-decoration: underline;}
+footer .top-footer .list-heading-desc{
+    font-family: "DM Sans",sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 300px;
+}
+footer .top-footer .subscription-form{margin-top:30px;}
+footer .top-footer .subscription-form input{
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    height: 43px;
+    margin-bottom: 10px;
+}
+footer .top-footer .subscription-form input::placeholder{
+    color: #B6B6B6;
+    font-family: "DM Sans",sans-serif;
+}
+footer .top-footer .subscription-form button{
+    background: #FBAD18;
+    border-radius: 4px;
+    border-color: #FBAD18;
+    text-transform: uppercase;
+    font-family: "DM Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 43px;
+}
+footer .bottom-footer{
+    background: #000;
+}
+footer .bottom-footer .copyright-wrap{
+    font-family: "DM Sans",sans-serif;
+    padding:12px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+/*Media Queries*/
+
+
+@media(max-width:580px){
+    .announcement-bar-sec .left-content{display: none;}
+    .announcement-bar-sec .container {padding: 0px 12px;}
+    .breadcrumb-wrap{display: none;}
+    header .navbar-sec .container{padding: 0 12px;}
+    .certificates-sec .logos-wrap {
+        display: flex;
+        align-items: center;
+         justify-content: center; 
+        flex-wrap: wrap;
+    }
+    .certificates-sec .logos-wrap .single-logo {
+        text-align: center;
+        margin: 0 0 25px;
+        width: 50%;
+    }
+    .certificates-sec .logos-wrap .single-logo:nth-child(3) img{max-width: 155px;}
+    .certificates-sec .main-heading{font-size: 24px}
+    .about-us-sec .inner-row .inner-col-one{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .about-us-sec .content-wrap .main-heading{font-size: 24px;}
+    .about-us-sec .content-wrap .main-desc{font-size: 14px;max-width: 325px;}
+    .about-us-sec {padding-top: 30px;}
+    .philosophy-sec .main-heading{font-size: 22px;}
+    .philosophy-sec .inner-col{margin-bottom: 25px;}
+    .team-sec .member-wrap .member-desc {text-align: justify;}
+    .team-sec .member-wrap .btn-wrap{text-align: center;}
+    .team-sec .member-wrap{margin-bottom: 40px;}
+    .team-sec .member-wrap .member-name{font-size: 22px;}
+    .team-sec .member-wrap .member-designation{font-size: 13px;}
+    .team-sec .member-wrap img{margin-bottom: 20px;}
+    .team-sec .member-wrap .member-desc{margin-top: 20px;}
+    .team-sec .main-heading {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .contact-us-sec .headings-wrap{text-align: center;}
+    .contact-us-sec .headings-wrap .sub-heading{font-size: 14px;}
+    .contact-us-sec .headings-wrap .main-heading {
+        font-size: 24px;
+        margin: 13px 0 25px;
+    }
+    .contact-us-sec .form-wrap form .btn-wrap {
+        text-align: center;
+        margin-top: 25px;
+    }
+    .profile-certifications-sec .inner-row{flex-direction: column-reverse;}
+    .profile-certifications-sec .cert-boxes-wrap .single-box .inner-wrap{width: auto;}
+    .profile-certifications-sec .sidebar-content-wrap .sidebar-main-heading{font-size: 25px;margin-top: 20px;}
+    .profile-certifications-sec .cert-boxes-wrap .single-box{margin: auto;}
+    .profile-certifications-sec .cert-boxes-wrap .single-box .main-heading{font-weight: 700;}
+    .profile-detail-sec .img-detail {
+        margin-top: 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .profile-detail-sec .img-detail .img-label{margin-bottom: 10px;}
+    .profile-detail-sec .detail-wrap .member-name{font-size: 22px;}
+    .profile-detail-sec .detail-wrap .member-designation{font-size: 13px;}
+    .therapeutic-sec .desktop-tabs-wrap{display: none;}
+    .therapeutic-sec .mobile-accordion-wrap{display: block;}
+    .it-hero-sec .desktop-img{display: none;}
+    .it-hero-sec .mobile-img{display: block;}
+    .it-hero-sec .left-content .main-heading {
+        font-size: 26px;
+        text-align: center;
+        line-height: 35px;
+    }
+    .it-hero-sec .content-wrap .inner-row-wrap {
+        transform: translate(-47%, -50%);
+        text-align: center;
+        padding: initial;
+    }
+    .it-hero-sec .right-content .desc-wrap{text-align: center;}
+    .it-hero-sec .inner-row-wrap .right-content .btn-wrap{text-align: center;}
+    .it-strength-sec .desktop-img{display: none;}
+    .it-strength-sec .mobile-img{display: block;}
+    .it-strength-sec .content-wrap .inner-text-wrap{width: 100%;padding: 0 20px;}
+    .it-strength-sec .content-wrap .inner-text-wrap .main-heading{font-size: 26px;}
+    .therapeutic-sec{padding-top: 30px;padding-bottom: 10px;}
+    .therapeutic-sec .main-sec-heading{text-align: center;font-size: 25px;}
+    .therapeutic-sec .inner-col{padding: 0px;}
+    .presenting-issues-sec{padding: 30px 0;}
+    .presenting-issues-sec .issues-wrap .single-box{width: 100%;margin-bottom: 15px;}
+    .presenting-issues-sec .single-box .heading-wrap .box-heading{font-size: 17px;font-weight: 500;}
+    .presenting-issues-sec .main-heading{font-size: 24px;text-align: center;}
+    .adhd-hero-sec .desktop-img{display: none;}
+    .adhd-hero-sec .mobile-img{display: block;}
+    .adhd-hero-sec .left-content .main-heading {
+        font-size: 26px;
+        text-align: center;
+        line-height: 35px;
+    }
+    .adhd-hero-sec .content-wrap .inner-row-wrap {
+        transform: translate(-47%, -50%);
+        text-align: center;
+        padding: initial;
+    }
+    .adhd-hero-sec .right-content .desc-wrap{text-align: center;}
+    .adhd-hero-sec .inner-row-wrap .right-content .btn-wrap{text-align: center;}
+    .adhd-help-sec .main-sec-heading{font-size: 24px;margin-bottom: 30px;}
+    .adhd-help-sec .img-with-text-wrap .img-wrap{display: none;}
+    .adhd-help-sec .img-with-text-wrap .content-wrap img{display: block;}
+    .adhd-help-sec .img-with-text-wrap .main-desc{margin-top: 15px;}
+    .adhd-help-sec .img-with-text-wrap .content-wrap{width: 100%;margin-bottom: 30px;}
+    .adhd-help-sec .img-with-text-wrap .sub-heading{text-align: center;font-size: 14px;}
+    .adhd-help-sec .img-with-text-wrap .main-heading{text-align: center;font-size: 24px;max-width: 350px;margin: auto;margin-bottom: 25px;}
+    .terms-conditions-sec .main-sec-heading{font-size: 24px;}
+    .privacy-policy-sec .main-sec-heading{font-size: 24px;}
+    .therapists-list-sec .filters-wrap{display: none;}
+    .therapists-list-sec .therapists-list .slick-slide{margin: auto;}
+    .therapists-list-sec .therapists-list .slick-list{margin: auto;}
+    .therapists-list-sec .therapists-list .single-therapist .card{margin-bottom: 20px;}
+    .therapists-list-sec .therapists-list-arrows-wrap {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 0;
+        right: 0;
+        justify-content: flex-end;
+    }
+    .therapists-list-sec .therapists-list-arrows-wrap .slider-arrows li.prev-arrow{margin-right: 8px;}
+    .therapists-list-sec .therapists-list .single-therapist .card .links-wrap .btn {
+        font-weight: 700;
+        font-size: 11px;
+        padding: 7px 17px;
+    }
+    .therapists-list-sec{padding: 10px 0 30px;}
+    footer .footer-logo-wrap{margin-bottom: 30px;}
+    footer .top-footer .menu-ul{margin-bottom: 25px;}
+    footer .top-footer .footer-logo-wrap .logo-desc{max-width: 358px}
+    footer .top-footer{padding-top: 45px;padding-bottom: 45px;}
+}
+
